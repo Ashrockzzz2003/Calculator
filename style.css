@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins:wght@300&display=swap');
+
+body{
+    font-family: 'Poppins', 'Open Sans', sans-serif;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.calculator{
+    background-color: white;
+    width: 320px;
+    width: fit-content;
+    height: 520px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    position: relative;
+}
+ 
+#result{
+    height: 120px;
+}
+
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 15px;
+    color: #919191;
+}
+
+#output{
+    text-align: right;
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: black;
+}
+
+#keyboard{
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    justify-content: center;
+}
+
+.operator, .number, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    border-radius: 50%;
+    border-width: 0;
+    font-weight: bold;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transition: all 90ms ease-in;
+}
+
+.number, .empty{
+    background-color: #f0f0f0;
+}
+
+.number, .operator{
+    cursor: pointer;
+}
+
+.number:active{
+    /*font-size: 10px;*/
+    transform: scale(0.9);
+}
+
+.operator:active{
+    /*font-size: 13px;*/
+    transform: scale(0.9);
+}
+
+.number:focus, .number:focus, .empty:focus{
+    outline: 0;
+}
+
+button:nth-child(4){
+    font-size: 20px;
+    background-color: #9ADCFF;
+}
+
+button:nth-child(8){
+    font-size: 20px;
+    background-color: #FFF89A;
+}
+
+button:nth-child(12){
+    font-size: 20px;
+    background-color: #FFB2A6;
+}
+
+button:nth-child(16){
+    font-size: 20px;
+    background-color: #FF8AAE;
+}
+
+button:nth-child(20){
+    font-size: 20px;
+    background-color: #00ffee;
+}
+
+.number{
+    background-color: white;
+    border-radius: 15px;   
+}
+
+.empty{
+    background-color: white;
+    box-shadow: none;
+}
