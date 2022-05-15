@@ -9,9 +9,9 @@ body{
 
 .calculator{
     background-color: white;
-    width: (320*1.8)px;
+    width: 90%;
     width: fit-content;
-    height: (520*1.8)px;
+    height: 520px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 15px;
