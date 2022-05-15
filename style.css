@@ -17,6 +17,12 @@ body{
     border-radius: 15px;
     position: relative;
 }
+
+@media only screen and (max-width: 600px) {
+    .calculator{
+        background-color: yellow;
+    }
+}
  
 #result{
     height: 120px;
